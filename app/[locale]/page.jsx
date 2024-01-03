@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import { getAreas } from "@/api/areaApi";
 import { useEffect } from "react";
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         {t("home")}
       </main>
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
