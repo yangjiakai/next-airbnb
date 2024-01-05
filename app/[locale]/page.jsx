@@ -35,9 +35,13 @@ export default function Home() {
                 <div>
                   <h1 className="text-5xl font-bold">Box Office News!</h1>
                   <p className="py-6">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                    assumenda excepturi exercitationem quasi. In deleniti eaque
-                    aut repudiandae et a id nisi.
+                    <label className="swap swap-flip text-9xl">
+                      {/* this hidden checkbox controls the state */}
+                      <input type="checkbox" />
+
+                      <div className="swap-on">😈</div>
+                      <div className="swap-off">😇</div>
+                    </label>
                   </p>
                   <button className="btn btn-primary">Get Started</button>
                 </div>
